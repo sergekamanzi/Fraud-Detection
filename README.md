@@ -12,11 +12,11 @@ This project aims to develop a predictive model to detect/classify fraud detecte
 
 | **Training Instance** | **Optimizer** | **Regularizer** | **Epochs** | **Early Stopping** | **Number of Layers** | **Learning Rate** | **Accuracy** | **F1 Score** | **Recall** | **Precision** |
 |----------------------|---------------|-----------------|------------|--------------------|----------------------|-------------------|--------------|--------------|------------|--------------|
-| Model 1               | Adam          | L2              | 100        | Yes                | 6                    |0.0003             |0.9858       |0.9761        |0.9935       | 0.9592        |
-| Model 2               | SDG          | L1_l2              | 100        | yes                 | 6                   | 0.001            |0.9679        |0.9474        |0.9935      |0.9053        |
-| Model 3               | RMSprop       | L1           | 100      | Yes                | 6                  |0.0005           |0.9792       |0.9646        |0.9740     |0.9554       |
-| Model 4               | Nadam         | L2              | 200        | Yes                | 5                    | 0.0003            | 0.95         | 0.94         | 0.92       | 0.96         |
-| Model 5 (default Simple NN)   | none         | None            | 10        | No                 | 3                    | 0.001             |0.8728         |0.7502       |0.6569     | 0.8745        |
+| Model 1               | Adam          | L2              | 100        | Yes                | 6                    |0.0003             |0.9820       |0.9698        |0.9903       |0.9502        |
+| Model 2               | SDG          | L1_l2              | 100        | yes                 | 6                   | 0.001            |0.9537        |0.9261       |0.9968      |0.8648        |
+| Model 3               | RMSprop       | L1           | 100      | Yes                | 6                  |0.0005           |0.9792       |0.9764       |0.9605     |0.9870       |0.9354
+| Model 4               | Nadam         | L2              | 200        | Yes                | 6                   | 0.0003            |0.9905        | 0.9839       | 0.9935     | 0.9745       |
+| Model 5 (default Simple NN)   | none         | None            | 10        | No                 | 3                    | 0.001             |0.8728         |0.7502       |0.6569     | 0.8745       |
 
 
 ### **Summary of Results**
