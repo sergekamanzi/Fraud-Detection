@@ -12,12 +12,12 @@ This project aims to develop a predictive model to detect/classify fraud detecte
 
 | **Training Instance** | **Optimizer** | **Regularizer** | **Epochs** | **Early Stopping** | **Number of Layers** | **Learning Rate** | **Accuracy** | **F1 Score** | **Recall** | **Precision** |
 |----------------------|---------------|-----------------|------------|--------------------|----------------------|-------------------|--------------|--------------|------------|--------------|
-| Model 1               | Adam          | L2              | 100        | Yes                | 3                    | 0.001             | 0.92         | 0.90         | 0.89       | 0.91         |
-| Model 2               | Adam          | L1              | 150        | No                 | 5                    | 0.0001            | 0.85         | 0.83         | 0.82       | 0.85         |
-| Model 3               | RMSprop       | None            | 50         | Yes                | 4                    | 0.001             | 0.88         | 0.86         | 0.85       | 0.87         |
+| Model 1               | Adam          | L2              | 100        | Yes                | 6                    |0.0003             |0.9858       |0.9761        |0.9935       | 0.9592        |
+| Model 2               | SDG          | L1_l2              | 100        | yes                 | 6                   | 0.001            |0.9679        |0.9474        |0.9935      |0.9053        |
+| Model 3               | RMSprop       | L1           | 100      | Yes                | 6                  |0.0005           |0.9792       |0.9646        |0.9740     |0.9554       |
 | Model 4               | Nadam         | L2              | 200        | Yes                | 5                    | 0.0003            | 0.95         | 0.94         | 0.92       | 0.96         |
-| Model 5 (NN Simple)   | Adam          | None            | 100        | No                 | 2                    | 0.001             | 0.80         | 0.78         | 0.77       | 0.79         |
-| Model 6 (ML)          | XGBoost       | L2              | -          | -                  | -                    | -                 | 0.93         | 0.91         | 0.90       | 0.92         |
+| Model 5 (default Simple NN)   | none         | None            | 10        | No                 | 3                    | 0.001             |0.8728         |0.7502       |0.6569     | 0.8745        |
+
 
 ### **Summary of Results**
 The best-performing model in terms of accuracy, F1 score, and precision was **Model 4**, which used Nadam as the optimizer, L2 regularization, 200 epochs, early stopping, 5 layers, and a learning rate of 0.0003. This model achieved an accuracy of **0.95** and an F1 score of **0.94**, indicating that it effectively balanced precision and recall.
