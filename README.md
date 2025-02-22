@@ -32,7 +32,6 @@ In comparing the performance between classical machine learning (e.g., Logistic 
 
 The Logistic Regression model achieved solid performance, with hyperparameter tuning yielding an **accuracy** of 0.9371 and an **F1 score** of 0.8920. While this is competitive, it fell short compared to the best neural network model, which achieved higher performance on this dataset.
 
-**Difference between Nadam + L2 and logistic regression**
 
 Neural networks (with proper optimization techniques like early stopping, Nadam optimizer, and regularization(l2)) tend to perform better due to their ability to capture complex patterns. However, Logistic Regression is a simpler and faster model, making it a good baseline for binary classification tasks like fraud detection.
 
