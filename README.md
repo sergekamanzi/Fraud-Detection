@@ -5,8 +5,7 @@
 This project aims to develop a predictive model to detect/classify fraud detected or no fraud detected  using different machine learning and deep learning algorithms. The primary focus is on comparing classical machine learning algorithms like Logistic Regression with neural networks optimized with various techniques (optimizers, regularization, etc.). The dataset used for this project is fraud detection.
 
 ### **Dataset**
-- **Dataset Used**: [fraud detection, from kaggle]
----
+- **Dataset Used**: (fraud detection, from kaggle)
 
 ## **Discussion of Findings**
 
