@@ -20,11 +20,9 @@ This project aims to develop a predictive model to detect/classify fraud detecte
 
 
 ### **Summary of Results**
-The best-performing model in terms of accuracy, F1 score, and precision was **Model 4**, which used Nadam as the optimizer, L2 regularization, 200 epochs, early stopping, 5 layers, and a learning rate of 0.0003. This model achieved an accuracy of **0.95** and an F1 score of **0.94**, indicating that it effectively balanced precision and recall.
+The best-performing model in terms of accuracy, F1 score, and precision was **Model 4**, which used Nadam as the optimizer, L2 regularization, 200 epochs, early stopping, 6 layers, and a learning rate of 0.0003. This model achieved an accuracy of **0.9905** and an F1 score of **0.9839**, indicating that it effectively balanced precision and recall.
 
-Here’s an updated comparison with Logistic Regression instead of XGBoost, based on the code provided:
-
----
+Here’s an updated comparison with Logistic Regression , based on the code provided:
 
 **Comparison between ML Algorithm (Logistic Regression) and Neural Network**
 
