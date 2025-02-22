@@ -22,14 +22,22 @@ This project aims to develop a predictive model to detect/classify fraud detecte
 ### **Summary of Results**
 The best-performing model in terms of accuracy, F1 score, and precision was **Model 4**, which used Nadam as the optimizer, L2 regularization, 200 epochs, early stopping, 5 layers, and a learning rate of 0.0003. This model achieved an accuracy of **0.95** and an F1 score of **0.94**, indicating that it effectively balanced precision and recall.
 
-### **Comparison between ML Algorithm and Neural Network**
-In comparing the performance between classical machine learning (e.g., **XGBoost**) and neural network models:
-- The **XGBoost model (Model 6)** had competitive performance, achieving an accuracy of **0.93** and F1 score of **0.91**, but it fell short compared to the best neural network model (Model 4).
-- Neural networks (with proper optimization techniques like early stopping, Nadam optimizer, and regularization) tend to perform better on this dataset due to their ability to capture complex patterns.
+Here’s an updated comparison with Logistic Regression instead of XGBoost, based on the code provided:
 
-### **Hyperparameters for the ML Algorithm (XGBoost)**
-- **Learning Rate**: 0.1
-- **Number of Estimators**: 100
-- **Max Depth**: 6
-- **Subsample**: 0.8
-- **Regularization (L2)**: Applied with `lambda = 1.0`
+---
+
+**Comparison between ML Algorithm (Logistic Regression) and Neural Network**
+
+In comparing the performance between classical machine learning (e.g., Logistic Regression) and neural network models:
+
+The Logistic Regression model achieved solid performance, with hyperparameter tuning yielding an **accuracy** of 0.9371 and an **F1 score** of 0.8920. While this is competitive, it fell short compared to the best neural network model, which achieved higher performance on this dataset.
+
+**Difference between Nadam + L2 and logistic regression**
+
+Neural networks (with proper optimization techniques like early stopping, Nadam optimizer, and regularization(l2)) tend to perform better due to their ability to capture complex patterns. However, Logistic Regression is a simpler and faster model, making it a good baseline for binary classification tasks like fraud detection.
+
+**Hyperparameters for the ML Algorithm (Logistic Regression)**
+- C (Regularization strength): Tuned using GridSearchCV, best value =  10.
+- Solver: Best choice =  liblinear.
+- Class Weight: Balanced to handle class imbalance.
+
