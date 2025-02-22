@@ -40,3 +40,34 @@ Neural networks (with proper optimization techniques like early stopping, Nadam 
 - Solver: Best choice =  liblinear.
 - Class Weight: Balanced to handle class imbalance.
 
+
+
+Based on the repository image you provided, I can help you create a README section that includes instructions on how to access the Google Colab notebook and the saved model. Here's a sample `README.md`:
+
+---
+
+# Fraud Detection
+
+## Project Title: FRAUD DETECTION
+
+### Problem Statement
+This project aims to develop a predictive model to detect/classify fraud detected or no fraud detected using different classical machine learning and deep learning algorithms. The primary focus is on comparing classical machine learning algorithms with advanced techniques to achieve the best results in fraud detection.
+
+### Repository Structure
+- **fraud.ipynb**: Jupyter Notebook used to create, train, and evaluate the machine learning model. This notebook can be accessed via Google Colab for interactive execution.
+- **saved model**: A folder containing the saved model that was trained on the dataset. This model can be used for inference without needing to retrain.
+
+### How to Access the Project
+
+#### 1. Open the Colab Notebook
+To access the Jupyter notebook (`fraud.ipynb`) via Google Colab:
+- Go to [Google Colab](https://colab.research.google.com/)
+- Upload the `fraud.ipynb` file or use the following steps:
+  - In the Colab interface, click **File > Upload notebook**.
+  - Select the `fraud.ipynb` file from the repository.
+  - Once uploaded, you can run the cells interactively within Colab.
+
+#### 2. Using the Saved Model
+The model is stored in the `saved model` folder. Here's how you can use the model:
+- Download the saved model from the repository.
+- Load the saved model into your environment using Python's `joblib` or `pickle` libraries.
